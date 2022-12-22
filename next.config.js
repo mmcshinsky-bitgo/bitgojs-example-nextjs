@@ -1,7 +1,6 @@
 /** @type {import('next').NextConfig} */
 
 const path = require("path");
-const webpack = require("webpack");
 
 const nextConfig = {
   reactStrictMode: true,
@@ -46,6 +45,10 @@ const nextConfig = {
     ];
     return config;
   },
+  env: {
+    ACCESS_TOKEN: process.env.ACCESS_TOKEN,
+    NETWORK: process.env.NETWORK,
+  }
 };
 
 module.exports = nextConfig;

@@ -1,11 +1,7 @@
 import Head from "next/head";
-import { BitGo } from "bitgo";
+import { bitgo } from '~/services/bitgo';
 
 export default function Home() {
-  const sdk = new BitGo({ env: "test" });
-
-  console.log("sdk", sdk);
-
   return (
     <div>
       <Head>
@@ -16,7 +12,7 @@ export default function Home() {
 
       <main>
         <p>BitGoJS SDK</p>
-        <p>Current Environment: {sdk.env}</p>
+        <p>Current Environment: {bitgo.env}</p>
       </main>
     </div>
   );

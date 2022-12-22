@@ -2,10 +2,7 @@
 
 Unofficial example of using the `bitgo` SDK in a NextJS environment.
 
-Files of interest to use `bitgo` in NextJS:
- - next.config.js
-
-> In the future, it is recommended to use the modular approach provided by `@bitgo/sdk-api`.
+See [BITGO.md](./BITGO.md) for details regarding usage of BitGo packages in this example.
 
 ## Getting Started
 
